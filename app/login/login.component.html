@@ -1,0 +1,18 @@
+<p-dialog [(visible)]="display">
+    <p-header>
+        Login
+    </p-header>
+    <div class="ui-g">
+        <div class="ui-g-4"><span>Username</span></div>
+        <div class="ui-g-4"><input type="text" pInputText [(ngModel)]="userName" /></div>
+    </div>
+    <div class="ui-g">
+        <div class="ui-g-4"> <span>Keycode</span></div>
+        <div class="ui-g-4"><input type="text" pInputText [(ngModel)]="keyCode" /></div>
+    </div>
+    <p-footer>
+        <button pButton type="button" (click)="connection()" class="ui-button-info">Connection</button><br>
+        <span *ngIf="errorMessage" style="color:red">{{errorText}}</span> 
+    </p-footer>
+</p-dialog>
+<span *ngIf="!display">{{welcomeMsg}}</span>
