@@ -1,5 +1,5 @@
 <div style="padding-top:15px;">
-    <span> Base currency : EUR</span>
+    <span> Base currency : {{fixerService.getBaseCurrency()}}</span>
 </div>
 <div style="padding-top:15px;">
     <p-dataTable [value]="currencyList | currencyRate">

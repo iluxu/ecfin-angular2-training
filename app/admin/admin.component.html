@@ -1,4 +1,7 @@
-<div *ngIf="loginService.isAdmin()">
-<span>Authorized access</span>
+<div *ngIf="loginService.isAdmin()" style="padding-top:15px">
+    <span *ngIf="!adminChangeCurrency"> Default base currency : {{fixerService.getBaseCurrency()}}</span>
+    <button pButton type="button" *ngIf="!adminChangeCurrency" (click)="setChange()" label="Click">Change it?</button>
+    <span *ngIf="adminChangeCurrency">New currency : </span>
+    <currencies-dropdown *ngIf="adminChangeCurrency" (changeCurrency)="changeBaseCurrency($event)"></currencies-dropdown>
 </div>
 <span *ngIf="!loginService.isAdmin()">Access denied please login.</span>

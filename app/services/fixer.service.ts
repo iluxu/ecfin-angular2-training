@@ -24,5 +24,14 @@ export class FixerService {
         }
         return this._latestCurrencies;
     }
+
+    public changeBaseCurrency(currency: string): void {
+        this._latestCurrencies = null;
+        this.defaultCurrency = currency;
+    }
+
+    public getBaseCurrency(): string {
+        return this.defaultCurrency;
+    }
 }
 
