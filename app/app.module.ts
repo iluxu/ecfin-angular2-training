@@ -10,6 +10,7 @@ import { InputTextModule } from 'primeng/primeng';
 import { AppComponent } from './app.component'
 import { TabMenuModule } from 'primeng/primeng';
 import { DataTableModule } from 'primeng/primeng';
+import { DialogModule } from 'primeng/primeng';
 
 import { appRoutes } from './routes';
 
@@ -19,8 +20,10 @@ import { AdminComponent } from './admin/admin.component';
 import { LoginComponent } from './login/login.component';
 import { NavBarComponent } from './navbar/navbar.component';
 import { CurrenciesDropdownComponent } from './shared/currenciesDropdown.component';
+import { LogoutComponent } from './login/logout.component';
 
 import { FixerService } from './services/fixer.service';
+import { LoginService } from './services/login.service';
 
 import { RatePipe } from './shared/keys.pipe';
 
@@ -34,6 +37,7 @@ import { RatePipe } from './shared/keys.pipe';
     DropdownModule,
     InputTextModule,
     BrowserAnimationsModule,
+    DialogModule,
     RouterModule.forRoot(appRoutes)
   ],
   declarations: [
@@ -44,9 +48,10 @@ import { RatePipe } from './shared/keys.pipe';
     AdminComponent,
     LoginComponent,
     CurrenciesDropdownComponent,
+    LogoutComponent,
     RatePipe
   ],
-  providers: [FixerService
+  providers: [FixerService, LoginService
   ],
   bootstrap: [
     AppComponent,
