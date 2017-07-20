@@ -1,1 +1,9 @@
-Currency List
+<div style="padding-top:15px;">
+    <span> Base currency : EUR</span>
+</div>
+<div style="padding-top:15px;">
+    <p-dataTable [value]="currencyList | currencyRate">
+        <p-column field="currency" header="Currency" filter="true"></p-column>
+        <p-column field="rate" header="Rate"></p-column>
+    </p-dataTable>
+</div>
