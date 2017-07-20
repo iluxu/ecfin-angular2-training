@@ -1,7 +1,7 @@
 exercice 3 => Créer les routes avec composants vides / Create routes with empty components / Tabmenu primeNG
 exercice 4 => Créer le service / create the fixer service / first service get all currencies with EUR BASE . 
 exercice 5 => Afficher les currencies / currency list / Datatable PRIMENG / concept of pipes.
-exercice 6 => Faire la transaction / transaction currency / dropdown primeng / functional javascript manipulation
-exercice 7 => Login/logout / creation of login service
-exercice 8 => Protecting Admin/ isolate reusable component / shared component / communication between child and parent
+exercice 6 => transaction currency / isolate reusable component / shared component / communication between child and parent
+exercice 7 => Login/logout / creation of login service => Give them the data.json
+exercice 8 => Protecting Admin 
 exercice 9 => Default currency in Admin + optimization of component
