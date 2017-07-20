@@ -13,6 +13,8 @@ import { AdminComponent } from './admin/admin.component';
 import { LoginComponent } from './login/login.component';
 import { NavBarComponent } from './navbar/navbar.component';
 
+import { FixerService } from './services/fixer.service';
+
 @NgModule({
   imports: [
     BrowserModule,
@@ -27,7 +29,7 @@ import { NavBarComponent } from './navbar/navbar.component';
     AdminComponent,
     LoginComponent,
   ],
-  providers: [
+  providers: [FixerService
   ],
   bootstrap: [
     AppComponent,
