@@ -1,1 +1,4 @@
-Admin
+<div *ngIf="loginService.isAdmin()">
+<span>Authorized access</span>
+</div>
+<span *ngIf="!loginService.isAdmin()">Access denied please login.</span>

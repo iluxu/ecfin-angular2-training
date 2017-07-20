@@ -44,5 +44,9 @@ export class LoginService {
         this.logged = false;
         this.subject.next(false);
     }
+
+    public isAdmin(): boolean {
+        return this.logged;
+    }
 }
 
