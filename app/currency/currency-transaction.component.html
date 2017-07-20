@@ -1,1 +1,5 @@
-Currency Transaction
+<div style="padding-top:15px"></div>
+<input type="text" pInputText [(ngModel)]="inputAmount" (ngModelChange)="amountChanged($event)" />
+<span> EUR To <span>
+<currencies-dropdown (changeCurrency)="currencyChanged($event)"></currencies-dropdown>
+<span> = {{convertedAmount | number : '1.2-2'}} {{selectedCurrency}} </span>
