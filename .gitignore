@@ -3,3 +3,5 @@ bs-config.json
 node_modules
 package-lock.json
 .vscode
+*.js
+*.js.map
